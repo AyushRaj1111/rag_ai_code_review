@@ -109,9 +109,14 @@ def example_4b_contract_analysis_direct_from_prompt(model_name, verbose=False):
     contracts_path = os.path.join(sample_files_path, "Agreements")
 
     # questions that we want to ask each contract
-    question_list = [{"topic": "executive employment agreement", "llm_query": "What are the names of the two parties?"},
-                     {"topic": "base salary", "llm_query": "What is the executive's base salary?"},
-                     {"topic": "governing law", "llm_query": "What is the governing law?"}]
+    question_list = [{"topic": "Code Formatting", "llm_query": "Enforce consistent indentation and formatting for clarity."},
+                     {"topic": "Variable Renaming", "llm_query": "Rename variables to improve readability."},
+                     {"topic": "Function Extraction", "llm_query": "Break down large functions into smaller, reusable ones."},
+                     {"topic": "Algorithm Selection", "llm_query": "Suggest more efficient algorithms for specific tasks based on code analysis."},
+                     {"topic": "Variable Optimization", "llm_query": "Reduce unnecessary variable declarations and promote code clarity."},
+                     {"topic": "dead_end_removal", "llm_query": "Identify and remove code that doesn't affect the program's output."},
+                     {"topic": "Redundant Code Removal", "llm_query": "Eliminate repetitive code blocks and consolidate them."},
+                     {"topic": "Loop Optimization", "llm_query": "Unroll small loops, or explore techniques like loop fusion for performance gains."}]
 
     print(f"\n > Loading model {model_name}...")
 

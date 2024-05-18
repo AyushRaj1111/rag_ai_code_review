@@ -1,8 +1,6 @@
 
 """ Fast Start Example #1 - Library - converting document files into an indexed knowledge collection.
-
     In this example, we will illustrate a basic recipe for completing the following steps:
-
       1. Create a library as a organizing construct for your knowledge-base
       2. Download sample files for a Fast Start - easy to 'swap out' and replace with your own files
       3. Use library.add_files method to automatically parse, text chunk and index the documents
@@ -28,7 +26,7 @@ def parsing_documents_into_library(library_name, sample_folder):
     #   -- note: if you have used this example previously, UN-Resolutions-500 is new path
     #   -- to pull updated sample files, set: 'over_write=True'
 
-    sample_files_path = Setup().load_sample_files(over_write=False)
+    sample_files_path = Setup().load_sample_files(over_write=True)
     print (f"Step 2 - loading the llmware sample files and saving at: {sample_files_path}")
 
     #   note: to replace with your own documents, just point to a local folder path that has the documents
